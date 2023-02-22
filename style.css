@@ -8,9 +8,6 @@
 
 body {
   background-color: #ffffff;
-  min-height: 100vh;
-  display: grid;
-  place-content: center; 
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: 18px;
 }
@@ -177,6 +174,12 @@ button:hover {
 }
 
 @media (min-width: 768px) {
+  body {
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+  }
+  
   .summary-grid-container {
     flex-direction: row;
     width: 44rem;
